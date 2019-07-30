@@ -10,7 +10,7 @@ from sklearn import metrics
 from random import randint
 from matplotlib import style
 import seaborn as sns
-%matplotlib inline
+# %matplotlib inline
 warnings.filterwarnings("ignore")
 
 colnames = ['ip', 'timestamp', 'request_method', 'status', 'size',
