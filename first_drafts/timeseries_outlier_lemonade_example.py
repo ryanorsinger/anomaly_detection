@@ -13,7 +13,6 @@ from sklearn import metrics
 from random import randint
 from matplotlib import style
 import seaborn as sns
-%matplotlib inline
 
 def evaluate(actual, predictions, output=True):
     mse = metrics.mean_squared_error(actual, predictions)
@@ -48,7 +47,7 @@ def plot_and_eval(predictions, actual, metric_fmt='{:.2f}', linewidth=4):
     plt.show()
 
 
-df = pd.read_csv("./lemonade.csv")
+df = pd.read_csv("./data/lemonade.csv")
 df.head()
 df.info()
 
